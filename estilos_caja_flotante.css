@@ -1,0 +1,30 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+
+.row{
+    margin: 10px 0;
+
+}
+
+.box{
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #eee;
+    float: left;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.row:nth-child(2) .box{
+    width: calc(50% - 20px);
+}
+
+.row:nth-child(3) .box{
+    width: calc(33.33% - 20px);
+}

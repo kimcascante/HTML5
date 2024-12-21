@@ -1,0 +1,22 @@
+/* Estilo para las filas */
+.fila {
+    column-count: 2;
+    column-gap: 50px; /* Separación entre columnas */
+    background-color: #f0f0f0; /* Color de fondo de la fila */
+    margin-bottom: 50px; /* Separación entre filas */
+    padding: 20px;
+}
+
+/* Estilo para la última fila (cuatro columnas) */
+.fila:nth-child(2) {
+    column-count: 3;
+}
+
+.fila:nth-child(3) {
+    column-count: 4;
+}
+
+/* Estilo para las columnas */
+.fila p {
+    break-inside: avoid; /* Evita que los párrafos se dividan en columnas */
+}
